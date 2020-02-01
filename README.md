@@ -11,21 +11,21 @@ All parts i have are bought from AliExpress. The LDR and Pushbutton came with a 
 - [OLED SSD1306](https://nl.aliexpress.com/item/32697467585.html)
 
 ## Hooking everything up
-| Part | Label | Port |
-| --- | --- | -- |
-| SSD1306 | 3.3V | 3.3V |
-| | GNS | GND |
-| | SCL | 22 |
-| | SDA | 21 |
-| LDR | + | 3.3V |
-| | S | 34 |
-| | - | GND |
-| Push button | + | 3.3V |
-| | S | 13 |
-| | - | GND |
-| Soil moisture sensor | + | 3.3V |
-| | S | 15 |
-| | - | GND |
+| Part | Name | Label | Port |
+| --- | --- | --- | -- |
+| SSD1306 | Input Voltage | 3.3V | 3.3V |
+| | Ground | GND | GND |
+| | Clock | SCL | 22 |
+| | Serial Data | SDA |  21 |
+| LDR | Input Voltage | + | 3.3V |
+| | Output Voltage | S | 34 |
+| | Ground | - | GND |
+| Push button | Input Voltage | + | 3.3V |
+| | Output Voltage | S | 13 |
+| | Ground | - | GND |
+| Soil moisture sensor | Input Voltage | + | 3.3V |
+| | Output Voltage | S | 15 |
+| | Ground | - | GND |
 
 * keep in mind the labelling is messed up on my sensors, so if you use the same don't look at the labels.
 
