@@ -4,6 +4,8 @@ Plant Friend is your plant companion to keep your plants from dying.
 ## Parts
 All parts i have are bought from AliExpress. The LDR and Pushbutton came with a 37 in 1 sensor kit. Although i have to say that the labelling is totally messed up on the breakout boards (S = 3.3V, - = Signal, + = Ground). So if you buy one double check the board.
 
+For this project i've used the ESP32 by Espressif. Besides its form factor this project could've been done with an Arduino as well or something similar. So if you don't have one, use what you've got.
+
 - [ESP32](https://nl.aliexpress.com/item/32835521420.html)
 - [Soil Moisture Sensor](https://nl.aliexpress.com/item/1830729489.html)
 - [LDR Breakout Board](https://nl.aliexpress.com/item/32826716396.html)
@@ -32,8 +34,8 @@ All parts i have are bought from AliExpress. The LDR and Pushbutton came with a 
 ## Libraries
 - [ThingPulse SSD1306 Library](https://github.com/ThingPulse/esp8266-oled-ssd1306)
 
-## ESP32 Upload settings
-These settings are what i currently use for uploading. I'm not sure if this is the best, but works.
+## Upload settings in the Arduino IDE
+For programming the ESP32 i use the Arduino IDE. These settings are what i currently use uploading. I'm not sure if this is the best, but works.
 
 | Setting | Value |
 | --- | --- |
