@@ -54,7 +54,6 @@ void setup() {
   display.init();
   display.setTextAlignment(TEXT_ALIGN_LEFT);
   display.setFont(ArialMT_Plain_10);
-//  draw_face(0,0,0);
 }
 
 /**
@@ -63,26 +62,31 @@ void setup() {
 void loop() {
   readSensorValues();
   setStates();
-  
-  if(ldr_state == 0) {  
-    
+
+  if(ldr_state == 0) {
+
     /** Sleeping */
-    
     draw_face(0,3,3);
     draw_snorring(250,2000);
-    
+
   } else {
 
     /** Interactive */
-    
+
     // Set face
     switch(water_soil_state) {
       case 2 :
-//        draw_face(1,3,3);
-        display.clear();
-        drawMouth(1);
-        blinkEyes(3);
-        display.display();
+        if(water_soil_state_timer < 1000) {
+          display.clear();
+          drawMouth(1);
+          blinkEyes(3);
+          display.display();
+        } else {
+          display.clear();
+          drawMouth(3);
+          blinkEyes(4);
+          display.display();
+        }
         break;
       case 1 :
         draw_face(0,1,1);
@@ -130,7 +134,7 @@ void setWaterSoilState()
     water_soil_state_timer++;
   } else {
     water_soil_state_timer = 0;
-  } 
+  }
 }
 
 /**
