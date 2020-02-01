@@ -8,7 +8,7 @@
 - OLED SSD1306
 
 ## Libraries
-- (ThingPulse SSD1306 Library)[https://github.com/ThingPulse/esp8266-oled-ssd1306]
+- [ThingPulse SSD1306 Library](https://github.com/ThingPulse/esp8266-oled-ssd1306)
 
 ## ESP32 Upload settings
 These settings are what i currently use for uploading. I'm not sure if this is the best, but works.
@@ -32,4 +32,4 @@ Generating XBM files from BPMs can be done with the use of Imagick. With the fol
 → magick mogrify -format xbm *.bmp
 ```
 
-If you don't have (Image Magick)[https://formulae.brew.sh/formula/imagemagick] you can install this with (Homebrew)[https://brew.sh]. I have no idea how to do this with Windows...
+If you don't have [Image Magick](https://formulae.brew.sh/formula/imagemagick) you can install this with [Homebrew](https://brew.sh). I have no idea how to do this with Windows...
