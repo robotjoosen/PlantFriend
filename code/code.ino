@@ -76,23 +76,24 @@ void loop() {
     // Set face
     switch(water_soil_state) {
       case 2 :
-        if(water_soil_state_timer < 1000) {
-          display.clear();
-          drawMouth(1);
-          blinkEyes(3);
-          display.display();
-        } else {
-          display.clear();
-          drawMouth(3);
-          blinkEyes(4);
-          display.display();
-        }
+        display.clear();
+        drawMouth(1);
+        blinkEyes(3);
+        display.display();
         break;
       case 1 :
         draw_face(0,1,1);
         break;
       case 0 :
-        draw_face(1,2,2);
+        if(water_soil_state_timer < 5000) {
+          draw_face(1,2,2);
+        } else {
+          display.clear();
+          drawMouth(3);
+          drawRightEye(4);
+          drawLeftEye(4);
+          display.display();
+        }
         break;
     }
   }
